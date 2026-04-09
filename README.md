@@ -14,12 +14,12 @@ This was built for a university assignment with highly specific architectural co
 
 The application handles text rendering and manipulation entirely from scratch through a custom grid system:
 
-### Phase 1 — Data Structure & Hierarchy
+### Data Structure & Hierarchy
 - Abandons standard string arrays in favor of a deeply nested class composition
 - Structures data strictly as: `Editor` ➔ `Document` ➔ `Page` ➔ `Column` ➔ `Line`
 - Completely encapsulates all logic within these object boundaries
 
-### Phase 2 — Core Editor Operations
+### Core Editor Operations
 - **Dynamic Text Reflow** — Automatically adjusts and wraps text based on active layout boundaries
 - **Layout Configuration** — Granular control over the page grid (max columns, max lines per column, and max characters per line)
 - **Search Functionality** — Iterates through the custom data hierarchy to locate specific strings of text
