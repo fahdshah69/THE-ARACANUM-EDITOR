@@ -53,6 +53,6 @@ Only the following standard headers are used as per assignment constraints:
 ```cpp
 #include <windows.h>
 #include <iostream>
----
+
+```
 *Built for CS-1004 Object Oriented Programming — FAST NUCES, Spring 2026*
----
