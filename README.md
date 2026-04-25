@@ -6,7 +6,7 @@ A custom desktop text editor built in C++ as a university assignment.
 
 ## Disclaimer
 
-This was built for a university assignment with highly specific architectural constraints. The primary goal was to enforce strict Object-Oriented Programming principles rather than building a fully-featured, production-ready text editor. The codebase intentionally avoids standard practices like using multiple header files, global functions, or standard GUI text-box controls to comply with the assignment rules. It works as a proof-of-concept for custom text rendering and OOP hierarchy, but lacks standard modern text editor features.
+This was built for a university assignment with highly specific architectural constraints. The primary goal was to enforce strict Object-Oriented Programming principles rather than building a fully-featured, production-ready text editor. The codebase intentionally avoids standard practices like global functions, or standard GUI text-box controls to comply with the assignment rules. It works as a proof-of-concept for custom text rendering and OOP hierarchy, but lacks standard modern text editor features.
 
 ---
 
@@ -31,16 +31,16 @@ The application handles text rendering and manipulation entirely from scratch th
 
 1. Open in Visual Studio 2019 or later
 2. Build as a Windows Desktop Application (ensure Win32 libraries like `User32.lib` and `Gdi32.lib` are linked)
-3. Ensure both `main.cpp` and `submission.h` are in the project directory
+3. Ensure all files are in project directory
 4. Compile and run to launch the native Windows GUI
 
 ---
 
 ## Limitations
 
-- The entire application logic is forced into a single header file (`submission.h`)
 - Zero global functions used (strict university constraint)
 - No support for rich text formatting (bold, italics, varying fonts)
+- No support for copy-pasting
 - Relies purely on the Win32 API for window rendering, meaning it is strictly Windows-only
 - No support for copying and pasting text
 - Can sometimes crash (it is actually rare)
